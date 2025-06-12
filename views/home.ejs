@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Blogs</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>All Blogs</h1>
+  <div class="container">
+    <% for (let post of posts) { %>
+      <div class="card">
+        <p><strong>User:</strong> <%= post.username %></p>
+        <p><strong>Title:</strong> <%= post.title %></p>
+        <p><strong>Content:</strong> <%= post.content %></p>
+        <p><strong>Date:</strong> <%= post.createdAt %></p>
+        <a href="/blogs/<%= post.id %>" class="btn">View</a>
+        <a href="/blogs/user/<%= post.id %>" class="btn" style="margin-left: 10px;">More from <%= post.username %></a>
+      </div>
+    <% } %>
+  </div>
+</body>
+</html>

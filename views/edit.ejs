@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Blog</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Edit Blog Post</h1>
+  <div class="container">
+    <form method="POST" action="/blogs/<%= blog.id %>?_method=PATCH">
+      <input type="text" name="title" value="<%= blog.title %>" required>
+      <input type="date" name="createdAt" value="<%= blog.createdAt %>" required>
+      <textarea name="content" required><%= blog.content %></textarea>
+      <button type="submit">Update</button>
+    </form>
+  </div>
+</body>
+</html>

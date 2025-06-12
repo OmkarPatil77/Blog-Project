@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= blog.title %></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1><%= blog.title %></h1>
+  <div class="container card">
+    <p><strong>Author:</strong> <%= blog.username %></p>
+    <p><strong>Date:</strong> <%= blog.createdAt %></p>
+    <p><strong>Content:</strong></p>
+    <p><%= blog.content %></p>
+    <a href="/blogs/<%= blog.id %>/edit" class="btn" style="background-color: orange;">Edit</a>
+    <!-- Delete Form Button -->
+    <form action="/blogs/<%= blog.id %>?_method=DELETE" method="POST" style="display:inline;">
+      <button type="submit" class="btn" style="background-color: rgb(14, 167, 213);">Delete</button>
+    </form>
+  </div>
+</body>
+</html>
