@@ -1,5 +1,5 @@
 # Minimal Blog Platform
-A simple blogging platform built with **Node.js**, **Express.js**, and **EJS**, featuring full **CRUD** functionality and clean UI.
+A full-stack blog application built with **Node.js**, **Express**, and **EJS**, implementing **RESTful API routes** for managing blog posts. This app allows users to create, view, edit, and delete blog posts dynamically with a clean and professional blue-themed UI.
 
 # Features
 
