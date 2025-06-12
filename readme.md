@@ -33,3 +33,16 @@ blog-project/
 │
 ├── index.js # Main Express server
 ├── package.json # Node dependencies
+
+# Installation & Setup
+
+1. Clone the Repository
+   ```bash
+   git clone https://github.com/yourusername/blog-project.git
+   cd blog-project
+2. Install Dependencies
+   npm install
+3. Run the App
+   node index.js
+4. Visit
+http://localhost:8080/blogs
